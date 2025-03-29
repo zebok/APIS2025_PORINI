@@ -1,0 +1,166 @@
+/* Estilos generales */
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Botón toggle */
+  #toggleTheme {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  #toggleTheme:hover {
+    background: #d4d4d4;
+  }
+  
+  /* Contenedor principal: calculadora y logs */
+  .calculator-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Calculadora */
+  .calculator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Display de la calculadora */
+  #display {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Botones de la calculadora */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  
+  .buttons button {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background: #d4d4d4;
+  }
+  
+  /* Sección de logs */
+  .logs-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    max-height: 320px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logs-section h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  
+  #logs {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background: #fafafa;
+  }
+  
+  .logs-section button {
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .logs-section button:hover {
+    background: #d4d4d4;
+  }
+  
+  /* Estilos para modo oscuro */
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode #toggleTheme {
+    background: #333;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .calculator {
+    background: #1e1e1e;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.1);
+  }
+  
+  body.dark-mode #display {
+    background: #333;
+    color: #fff;
+    border-color: #555;
+  }
+  
+  body.dark-mode .buttons button {
+    background: #333;
+    color: #fff;
+  }
+  
+  body.dark-mode .buttons button:hover {
+    background: #444;
+  }
+  
+  body.dark-mode .logs-section {
+    background: #1e1e1e;
+    border: 1px solid #444;
+  }
+  
+  body.dark-mode #logs {
+    background: #333;
+  }
+  
+  body.dark-mode .logs-section button {
+    background: #333;
+    color: #fff;
+  }
+  
+  body.dark-mode .logs-section button:hover {
+    background: #444;
+  }
+  
